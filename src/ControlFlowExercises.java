@@ -42,17 +42,42 @@ public class ControlFlowExercises {
 //        }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What number would you like to go up to?");
+//        System.out.println("What number would you like to go up to?");
+//        int userInput = scanner.nextInt();
+//        System.out.println("Here's your table!");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------------------------");
+//
+//        for (int i = 1; i <= userInput; i++){
+//            int squared = i*i;
+//            int cubed = i*i*i;
+//            System.out.printf("%d | %d | %d \n", i, squared, cubed);
+//        }
+
+        System.out.println("What grade did you get this semester?");
         int userInput = scanner.nextInt();
-        System.out.println("Here's your table!");
-        System.out.println("number | squared | cubed");
-        System.out.println("------------------------");
 
-        for (int i = 1; i <= userInput; i++){
-            int squared = i*i;
-            int cubed = i*i*i;
-            System.out.printf("%d | %d | %d \n", i, squared, cubed);
+        for (int i = 0; i <= userInput; i++) {
+            if (userInput < 59){
+                System.out.println("You've received an F.");
+                break;
+            } else if (userInput >= 60 && userInput <= 66) {
+                System.out.println("You've received a D.");
+                break;
+            } else if (userInput >= 67 && userInput <= 79){
+                System.out.println("You've received a C.");
+                break;
+            } else if (userInput >= 80 && userInput <= 87){
+                System.out.println("You've received a B.");
+                break;
+            } else if (userInput >= 88 && userInput <= 98) {
+                System.out.println("You've received a A.");
+                break;
+            } else if (userInput >= 99){
+                System.out.println("You've received a A+.");
+                break;
+            }
         }
-
     }
 }
+
