@@ -7,6 +7,7 @@ public class MethodsExercises {
         System.out.println(multiplication(3, 2));
         System.out.println(division(10, 2));
         System.out.println(modulus(14, 5));
+        System.out.println(getInteger(1, 50));
     }
 
     public static int addition(int add1, int add2){
@@ -35,9 +36,18 @@ public class MethodsExercises {
 
 //    public static int
 
-    public static int getInteger(int min, int max){
+    public static int getInteger(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+        int userInput = scanner.nextInt();
+        if (userInput < max && userInput > min){
+            System.out.println("This is your number " + userInput);
+            return userInput;
+        } else {
+            System.out.println("Sorry, this number is invalid");
+            return getInteger(min, max);
+        }
 
-        System.out.print("Enter a number between 1 and 10: ");
-        int userInput = getInteger();
+
     }
 }
