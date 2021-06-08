@@ -9,10 +9,10 @@ public class Student {
 
     private ArrayList<Integer> grades;
 
-    public Student(String name, int grades) {
-        this.name = name;
-        grades = new ArrayList<>();
-    }
+//    public Student(String name, int grades) {
+//        this.name = name;
+//        grades = new ArrayList<>();
+//    }
 
     public String getName() {
         return name;
@@ -22,9 +22,9 @@ public class Student {
         grades.add(grade);
         return;
 
-        public double getGradeAverage(){
-            return grades / grade.size
-        }
+//        public double getGradeAverage(){
+//            return grades / grade.size;
+//        }
     }
 
     HashMap<String, String> students = new HashMap<>();
